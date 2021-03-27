@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: cornsilk;
+}
+.container {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left, purple, rgb(44, 120, 192));
+  /* background: #550b0d; */
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.inputForm,
+#otpForm {
+  background: cornsilk;
+  padding: 4rem 6rem;
+  font-weight: 550;
+}
+#otpForm input {
+  padding: 0.4rem 4rem 0.5rem 0.4rem;
+  margin: 0.4rem 0rem 0.5rem;
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+label {
+  margin: 2rem 0rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+input {
+  padding: 0.4rem 4rem 0.5rem 0.4rem;
+  margin: 0.2rem 0rem 0.1rem;
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.submit {
+  margin: 0rem 2.5rem;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  font-weight: 600;
+  font-size: 1rem;
+  background: blueviolet;
+  color: #fff;
+}
+#attempt,
+#attempts,
+#span {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+#attempts {
+  color: crimson;
+}
+
+#span {
+  color: green;
+}
+
+#name-err,
+#email-err,
+#phone-err,
+#form-err {
+  padding: 5px;
+  background: rgb(219, 217, 185);
+  color: rgb(231, 79, 79);
+  visibility: hidden;
+}
