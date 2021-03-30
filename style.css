@@ -5,29 +5,39 @@
   border-radius: 5px;
 }
 body {
-  min-height: 100vh;
   width: 100%;
-  background: cornsilk;
+  background: linear-gradient(to right, rgb(200, 209, 208), rgb(235, 241, 247));
+  /* font-family :Georgia, 'Times New Roman', Times, serif; */
+  font-size: medium;
 }
 .container {
-  height: 700px;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to left, purple, rgb(44, 120, 192));
-  /* background: #550b0d; */
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  background: linear-gradient(to left, rgb(230, 158, 230), rgb(164, 199, 231));
+  clip-path: inset(5% 25% 5% 25%);
+}
+.glass {
+  min-height: 60vh;
+  display: flex;
+  backdrop-filter: blur(2rem);
+  box-shadow: 6px 6px 20px rgb(190, 187, 187);
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.9)
+  );
 }
 
 .inputForm,
 #otpForm {
-  background: cornsilk;
   padding: 4rem 6rem;
-  font-weight: 550;
 }
 #otpForm input {
   padding: 0.4rem 4rem 0.5rem 0.4rem;
-  margin: 0.4rem 0rem 0.5rem;
+  margin: 0.5rem 0rem 1rem;
+  color: darkviolet;
   border: none;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
@@ -42,12 +52,18 @@ input {
   border: none;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
+button {
+  border: none;
+  box-shadow: none;
+}
+
 .submit {
   margin: 0rem 2.5rem;
   padding: 0.5rem 3rem 0.5rem 3rem;
-  font-weight: 600;
+  text-transform: uppercase;
+  /* font-weight: 600; */
   font-size: 1rem;
-  background: blueviolet;
+  background: rgb(125, 17, 226);
   color: #fff;
 }
 #attempt,
@@ -63,13 +79,15 @@ input {
 #span {
   color: green;
 }
-
+#otp {
+  margin: 1rem 0rem 0rem 0rem;
+}
 #name-err,
 #email-err,
 #phone-err,
 #form-err {
   padding: 5px;
-  background: rgb(219, 217, 185);
-  color: rgb(231, 79, 79);
+  background: linear-gradient(to right, rgb(200, 209, 208), rgb(235, 241, 247));
+  color: darkviolet;
   visibility: hidden;
 }

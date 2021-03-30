@@ -9,33 +9,35 @@
   </head>
   <body>
     <div class="container">
-      <form
-        class="inputForm"
-        id="inputForm"
-        action="verification.html"
-        onsubmit="return validate()"
-      >
-        <div class="form-control">
-          <div id="form-err"></div>
-          <label>Name</label><br />
-          <input type="text" id="inputName" placeholder="Name" /><br />
-          <div id="name-err"></div>
-          <br />
-        </div>
-        <div class="form-control">
-          <label>Email</label><br />
-          <input type="email" id="email" placeholder="Email" /><br />
-          <div id="email-err"></div>
-          <br />
-        </div>
-        <div class="form-control">
-          <label>Phone no</label><br />
-          <input type="tel" id="phoneNo" placeholder="Phone No" /><br />
-          <div id="phone-err"></div>
-          <br />
-        </div>
-        <input type="submit" class="submit" value="submit" />
-      </form>
+      <div class="glass">
+        <form
+          class="inputForm"
+          id="inputForm"
+          onsubmit="return validate()"
+          action="verification.html"
+        >
+          <div class="form-control">
+            <div id="form-err"></div>
+            <label>Name :</label><br />
+            <input type="text" id="inputName" placeholder=" Full Name" /><br />
+            <div id="name-err"></div>
+            <br />
+          </div>
+          <div class="form-control">
+            <label>Email :</label><br />
+            <input type="email" id="email" placeholder="Email Address" /><br />
+            <div id="email-err"></div>
+            <br />
+          </div>
+          <div class="form-control">
+            <label>Phone no :</label><br />
+            <input type="tel" id="phoneNo" placeholder="Phone No" /><br />
+            <div id="phone-err"></div>
+            <br />
+          </div>
+          <input type="submit" class="submit" value="submit" />
+        </form>
+      </div>
     </div>
     <script src="index.js"></script>
   </body>

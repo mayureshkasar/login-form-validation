@@ -9,31 +9,35 @@
   </head>
   <body>
     <div class="container">
-      <!-- form for otp verification  -->
-      <form
-        id="otpForm"
-        onsubmit="return otpVerification()"
-        action="http://pixel6.co/"
-      >
-        <h3>Dear</h3>
-        <input type="text" id="fname" value="" readonly /><br />
-        Thank you for your enquiry.<br />
-        A 4 digit verification number has <br />been sent to<br />
-        your phone number:<br /><input
-          type="text"
-          value=""
-          id="pno"
-          readonly
-        /><br />
-        please enter in the following box and <br />submit for confirmation.
-        <br />
-        <input type="text" id="otp" /><br />
-        <h5 id="attempt">Attempts remaining : <span id="attempts"></span></h5>
-        <input type="submit" class="submit" value="submit" class="submittwo" />
-        <h4 id="otp">
-          For Demo - Use OTP of 4 digits : <span id="span"></span>
-        </h4>
-      </form>
+      <div class="glass">
+        <!-- form for otp verification  -->
+        <form
+          id="otpForm"
+          onsubmit="return otpVerification()"
+          action="http://pixel6.co/"
+          method="POST"
+        >
+          <h3>Dear</h3>
+          <input type="text" id="fname" value="" readonly /><br />
+          Thank you for your enquiry.<br />
+          A 4 digit verification number has <br />been sent to<br />
+          your phone number:<br /><input
+            type="text"
+            value=""
+            id="pno"
+            readonly
+          /><br />
+          please enter in the following box and <br />submit for confirmation.
+          <br />
+          <input type="text" id="otp" /><br />
+          <h5 id="attempt">Attempts remaining : <span id="attempts"></span></h5>
+          <br />
+          <button type="submit" class="submit">submit</button>
+          <h4 id="otp">
+            For Demo - Use OTP of 4 digits : <span id="span"></span>
+          </h4>
+        </form>
+      </div>
     </div>
     <script src="verification.js"></script>
   </body>
