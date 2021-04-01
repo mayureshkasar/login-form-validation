@@ -12,16 +12,17 @@ body {
 }
 .container {
   min-height: 100vh;
+  /* width: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(to left, rgb(230, 158, 230), rgb(164, 199, 231));
   clip-path: inset(5% 25% 5% 25%);
+  /* overflow: hidden; */
 }
 .glass {
   min-height: 60vh;
   display: flex;
-  backdrop-filter: blur(2rem);
   box-shadow: 6px 6px 20px rgb(190, 187, 187);
   background: linear-gradient(
     to right bottom,
@@ -61,7 +62,6 @@ button {
   margin: 0rem 2.5rem;
   padding: 0.5rem 3rem 0.5rem 3rem;
   text-transform: uppercase;
-  /* font-weight: 600; */
   font-size: 1rem;
   background: rgb(125, 17, 226);
   color: #fff;
@@ -80,7 +80,7 @@ button {
   color: green;
 }
 #otp {
-  margin: 1rem 0rem 0rem 0rem;
+  margin-top: 1rem;
 }
 #name-err,
 #email-err,
@@ -90,4 +90,9 @@ button {
   background: linear-gradient(to right, rgb(200, 209, 208), rgb(235, 241, 247));
   color: darkviolet;
   visibility: hidden;
+}
+@media (max-width: 400px) {
+  .container {
+    clip-path: none;
+  }
 }
